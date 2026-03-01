@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script  src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Web Development Workshop</h1>
+    <p>Join us to learn the basics of front-end development.</p>
+    <hr>  
+</header>
+
+  <section>
+    <h2>Event Information</h2>
+    <ul>
+      <li>Date: March 10, 2026</li>
+      <li>Time: 10:00 AM - 4:00 PM</li>
+      <li>Venue: COWRKS(OMR), Chennai</li>
+      <li>Organizer: AdroIT Technologies</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form>
+      <fieldset>
+        <!-- Personal Information -->
+
+        Name: <input type="text" name="name"><br>
+        Email: <input type="email" name="email"><br>
+        Phone: <input type="tel" name="phone"><br>
+        DOB: <input type="date" name="dob"><br>
+        Gender: 
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+      </fieldset>
+      
+      <fieldset>
+        <!--Event Details -->
+        Event: 
+        <select name="event">
+          <option>Workshop</option>
+          <option>Seminar</option>
+        </select><br>
+        Mode: 
+        <input type="checkbox"  name="mode" value="online" onclick="onlyone(this)"> Online
+        <input type="checkbox"  name="mode" value="offline" onclick="onlyone(this)"> Offline
+    </fieldset>
+      
+      <fieldset>
+        <!-- Additional Information -->
+
+        College/Company: <input type="text" name="org"><br>
+        Upload ID: <input type="file" name="id"><br>
+        Comments: <textarea name="comments"></textarea>
+
+      </fieldset>
+      
+    <section>
+
+    <p>
+      <input type="checkbox" name="confirm" id="confirm">
+      <label for="confirm">I confirm that the above details are correct.</label>
+      
+      <!-- Confirmation button placed inline -->
+      <input type="submit" value="Submit">
+      <input type="reset" value="reset">
+      
+    </p>
+      </section>
+       <section>
+    <h2>Registered Participants</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th><th>Email</th><th>Phone</th><th>Event</th><th>Mode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sample User</td><td>sample@email.com</td><td>1234567890</td><td>Workshop</td><td>Online</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact: support@adroIT.com | Help Desk: +91-9876543210</p>
+    <p>&copy; 2026 AdroIT Technologies</p>
+  </footer>
+</body>
+</html>
